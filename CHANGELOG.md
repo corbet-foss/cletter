@@ -8,7 +8,8 @@ Semantic Versioning.
 - Compose `cnice` (new `greet` + `farewell` facade, superseding `cgreet` and
   `cfarewell`) instead of depending on those two crates directly. The
   re-exported salutation/closing API is unchanged; all 108 conformance
-  vectors still pass in Rust, JavaScript, Python and Typst.- Fix Python dependency bounds to the current lines
+  vectors still pass in Rust, JavaScript, Python and Typst.
+- Fix Python dependency bounds to the current lines
   (`cnice>=0.1,<0.2`, `cdate>=0.3,<0.4`, `cink>=0.2,<0.3`).
 - Vendor `cnice` Typst sources (with content hashes) instead of the
   `cgreet`/`cfarewell` snapshots.
