@@ -117,7 +117,7 @@ their storage shape and declared locales. `normalize_language` and
 | Library | Responsibility |
 | --- | --- |
 | [cletter](https://github.com/corbet-labs/cletter) | Compose the correspondence helpers |
-| [cnice](https://github.com/corbet-labs/cnice) | Formulaic phrases: salutations and closings for every covered locale (`greet` + `farewell`) |
+| [cnice](https://github.com/corbet-foss/cnice) | Formulaic phrases: salutations and closings for every covered locale (`greet` + `farewell`) |
 | [cdate](https://github.com/corbet-labs/cdate) | Calendar-date formatting (CLDR-pinned tables) |
 | [cink](https://github.com/corbet-labs/cink) | Handwritten signature images |
 | [cnumber](https://github.com/corbet-labs/cnumber) | Number formatting with Swiss amtlich mode (new) |
