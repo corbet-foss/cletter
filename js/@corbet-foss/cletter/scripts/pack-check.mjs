@@ -1,5 +1,5 @@
 // Exercise the packed artifact outside the repository's module-resolution tree.
-import { mkdtempSync, copyFileSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, copyFileSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
@@ -21,6 +21,18 @@ else if (manager === 'pnpm') run('npx', ['--yes', 'pnpm@10.15.1', 'add', '--igno
 else if (manager === 'yarn') run('npx', ['--yes', 'yarn@1.22.22', 'add', '--ignore-scripts', tarball], consumer);
 else if (manager === 'bun') run('bun', ['add', '--ignore-scripts', tarball], consumer);
 else throw new Error(`Unknown manager ${manager}`);
+// Inspect the installed artifact, including the generated license inventory.
+const installed = join(consumer, 'node_modules', pkg.name);
+const published = JSON.parse(readFileSync(join(installed, 'package.json'), 'utf8'));
+if (published.version !== pkg.version || published.license !== pkg.license) throw new Error('Installed version or license differs');
+const listFiles = (dir) => readdirSync(dir).filter((name) => statSync(join(dir, name)).isFile()).sort();
+const expectedLicenses = listFiles('../../../LICENSES');
+const installedLicenses = listFiles(join(installed, 'LICENSES'));
+if (JSON.stringify(installedLicenses) !== JSON.stringify(expectedLicenses)) throw new Error('Installed license inventory differs');
+for (const name of expectedLicenses) {
+    if (!readFileSync(join(installed, 'LICENSES', name)).equals(readFileSync(join('../../../LICENSES', name)))) throw new Error(`Installed license text differs: ${name}`);
+}
+
 for (const script of ['consumer.mjs', 'verify-api.mjs']) copyFileSync('scripts/' + script, join(consumer, script));
 run('node', ['consumer.mjs'], consumer);
 run('bun', ['consumer.mjs'], consumer);

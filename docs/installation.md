@@ -3,8 +3,8 @@
 The main branch ships 0.4.0 under LGPL-3.0-only WITH LGPL-3.0-linking-exception, published to registries. The existing releases documented below keep their original
 license grants; this change does not replace their artifacts.
 
-The JavaScript, Rust and Typst examples below describe version 0.2.2;
-Python installation uses the published 0.2.1 release. Check the linked registry
+The JavaScript, Rust and Typst examples below describe version 0.4.0;
+Python installation uses the published 0.4.0 release. Check the linked registry
 or release for availability; a source manifest alone does not establish publication.
 
 ## JavaScript and Rust
@@ -18,9 +18,9 @@ verify that lower bound.
 ## Python and the command line
 
 The pure Python package requires Python 3.10+ and is published on
-[PyPI](https://pypi.org/project/cletter/0.2.1/). Version 0.2.1 retains
+[PyPI](https://pypi.org/project/cletter/0.4.0/). Version 0.2.1 retains
 [Apache-2.0](https://github.com/corbet-labs/cletter/blob/v0.2.1/LICENSE);
-the LGPL-3.0-only WITH LGPL-3.0-linking-exception terms on main apply to the upcoming 0.3.0 release line.
+the LGPL-3.0-only WITH LGPL-3.0-linking-exception terms on main apply to the 0.4.0 release line.
 Install the PyPI release with pip or uv in your Python environment:
 
 ```sh
@@ -54,17 +54,17 @@ For an isolated CLI environment, use `pipx install cletter==0.4.0` or
 The wheel contains no native extensions and is platform independent. Release
 evidence records the Python version and operating system actually exercised.
 Verified wheels and source distributions are also attached to the
-[GitHub release](https://github.com/corbet-labs/cletter/releases/tag/v0.2.1).
+[GitHub release](https://github.com/corbet-labs/cletter/releases/tag/v0.4.0).
 The Python 0.2.1 API predates `normalize_locale_id`, which appears in newer
 source documentation.
 
 ## JSR
 
 The JSR distribution is named
-[`@corbet-foss/cletter`](https://jsr.io/@corbet-foss/cletter@0.2.2):
+[`@corbet-foss/cletter`](https://jsr.io/@corbet-foss/cletter@0.4.0):
 
 ```sh
-deno add jsr:@corbet-foss/cletter@0.2.2
+deno add jsr:@corbet-foss/cletter@0.4.0
 ```
 
 The JSR facade imports its published npm components. In an existing Node project,
@@ -73,8 +73,8 @@ for a standalone call with `deno run --node-modules-dir=auto app.ts`.
 
 ## Typst
 
-Download `cletter-0.2.2-typst.tar.gz` from the matching GitHub release and
-extract its contents into `typst/packages/local/cletter/0.2.2` under your
+Download `cletter-0.4.0-typst.tar.gz` from the matching GitHub release and
+extract its contents into `typst/packages/local/cletter/0.4.0` under your
 [Typst data directory](https://github.com/typst/packages#local-packages):
 
 | System | Data directory |
@@ -84,7 +84,7 @@ extract its contents into `typst/packages/local/cletter/0.2.2` under your
 | Windows | `%APPDATA%` |
 
 ```typst
-#import "@local/cletter:0.2.2": *
+#import "@local/cletter:0.4.0": *
 ```
 
 The archive includes its manifest, tables, source, and licenses. CI compiles

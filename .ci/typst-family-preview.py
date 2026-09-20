@@ -28,7 +28,7 @@ with tempfile.TemporaryDirectory(prefix="cletter-preview-") as temporary:
             for member in members:
                 path = Path(member.name)
                 if (path.is_absolute() or ".." in path.parts or not member.isfile()
-                        or member.size > 2_000_000 or "FSL" in member.name):
+                        or member.size > 2_000_000):
                     raise ValueError("Unexpected preview package member")
             manifest = tomllib.loads(stream.extractfile("typst.toml").read().decode())["package"]
             name, version = manifest["name"], manifest["version"]

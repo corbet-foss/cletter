@@ -63,12 +63,33 @@ SPDX-FileCopyrightText = "2007 Free Software Foundation, Inc."
 SPDX-License-Identifier = "GPL-3.0-only"
 
 [[annotations]]
-path = ["LICENSES/LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt", "py/LICENSES/LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt"]
+path = "LICENSES/Apache-2.0.txt"
+SPDX-FileCopyrightText = "2026 Julian Y. Richard Corbet"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "LICENSES/MIT.txt"
+SPDX-FileCopyrightText = "2026 Julian Y. Richard Corbet"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "LICENSES/LGPL-3.0-only.txt"
+SPDX-FileCopyrightText = "2007 Free Software Foundation, Inc."
+SPDX-License-Identifier = "LGPL-3.0-only"
+
+[[annotations]]
+path = "LICENSES/GPL-3.0-only.txt"
+SPDX-FileCopyrightText = "2007 Free Software Foundation, Inc."
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = ["LICENSES/LGPL-3.0-linking-exception.txt", "py/LICENSES/LGPL-3.0-linking-exception.txt"]
 precedence = "override"
 SPDX-FileCopyrightText = "Canonical"
 SPDX-License-Identifier = "LGPL-3.0-linking-exception"
 
 [[annotations]]
-path = "LICENSES/FSL-1.1-ALv2.txt"
-SPDX-FileCopyrightText = "2026 Julian Y. Richard Corbet"
-SPDX-License-Identifier = "FSL-1.1-ALv2"
+path = ["LICENSES/LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt", "py/LICENSES/LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt"]
+precedence = "override"
+SPDX-FileCopyrightText = "Canonical"
+SPDX-License-Identifier = "LGPL-3.0-linking-exception"

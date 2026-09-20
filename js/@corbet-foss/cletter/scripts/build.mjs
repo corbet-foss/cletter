@@ -24,7 +24,6 @@ rmSync('LICENSES', { recursive: true, force: true });
 mkdirSync('LICENSES', { recursive: true });
 // This directory is generated; replace it so retired license texts cannot ship.
 for (const file of readdirSync('../../../LICENSES')) {
-    if (file === 'FSL-1.1-ALv2.txt') continue; // Historical reference only; never distributed.
     copyFileSync(`../../../LICENSES/${file}`, `LICENSES/${file}`);
 }
 // The standalone browser module embeds the sibling implementations.

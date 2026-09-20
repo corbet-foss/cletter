@@ -47,7 +47,8 @@ with zipfile.ZipFile(args.wheel) as wheel:
     metadata = BytesParser().parsebytes(wheel.read(metadata_paths[0]))
     check(metadata["Name"] == NAME, "Wheel package name differs from repository")
     check(metadata["License-Expression"] == "LGPL-3.0-only WITH LGPL-3.0-linking-exception", "Wheel must declare LGPL-3.0-only WITH LGPL-3.0-linking-exception")
-    check(not any("FSL" in path for path in files), "Wheel retains an obsolete license")
+    wheel_notices = {path.rsplit("/LICENSES/", 1)[1] for path in files if "/LICENSES/" in path}
+    check(wheel_notices == set(licenses), "Wheel license inventory differs from the source notices")
     for name, expected in licenses.items():
         check(any(path.endswith("/LICENSES/" + name) and wheel.read(path) == expected for path in files),
               f"Wheel is missing the original {name}")

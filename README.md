@@ -26,7 +26,7 @@ salutation('de-ch', 'Frau Dr. Müller');
 | Bun | `bun add @corbet-foss/cletter` |
 | Deno | `deno add npm:@corbet-foss/cletter` |
 
-The 0.2.2 JavaScript distribution includes compiled ESM, CommonJS,
+The 0.4.0 JavaScript distribution includes compiled ESM, CommonJS,
 TypeScript declarations, and a standalone browser module. Node.js 20+ is
 supported; no TypeScript loader is required.
 
@@ -140,7 +140,7 @@ for generation, verification, and publication commands.
 
 ## License
 
-Copyright 2026 Julian Y. Richard Corbet. The 0.3.0 release line is licensed
+Copyright 2026 Julian Y. Richard Corbet. The 0.4.0 release line is licensed
 under [LGPL-3.0-only](https://github.com/corbet-foss/cletter/blob/main/LICENSES/LGPL-3.0-only.txt)
 [WITH LGPL-3.0-linking-exception](https://github.com/corbet-foss/cletter/blob/main/LICENSES/LGPL-3.0-only%20WITH%20LGPL-3.0-linking-exception.txt),
 with the incorporated [GPL version 3](https://github.com/corbet-foss/cletter/blob/main/LICENSES/GPL-3.0-only.txt).
