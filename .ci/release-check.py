@@ -69,7 +69,7 @@ def main():
              ".github/workflows/release.yml", ".github/workflows/ci.yml"]
     files = {path: (ROOT / path).read_text() for path in paths}
     package = tomllib.loads((ROOT / "Cargo.toml").read_text())["package"]["name"]
-    repository = "corbet-labs/" + package
+    repository = "corbet-foss/" + package
     adapter = ast.parse(files[".ci/publish.py"], filename=".ci/publish.py")
     ast.parse(files[".ci/release-check.py"], filename=".ci/release-check.py")
     assignments = {node.targets[0].id: ast.literal_eval(node.value) for node in adapter.body

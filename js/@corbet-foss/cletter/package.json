@@ -1,5 +1,5 @@
 {
-  "name": "@corbet-labs/cletter",
+  "name": "@corbet-foss/cletter",
   "version": "0.4.0",
   "description": "Locale-correct business correspondence: composes cnice, cink and cdate. Mirrors the cletter Rust crate release line.",
   "license": "LGPL-3.0-only WITH LGPL-3.0-linking-exception",
@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/corbet-labs/cletter.git",
-    "directory": "js/@corbet-labs/cletter"
+    "url": "git+https://github.com/corbet-foss/cletter.git",
+    "directory": "js/@corbet-foss/cletter"
   },
   "type": "module",
   "main": "./dist/index.cjs",
@@ -46,9 +46,9 @@
     "build": "bun ./scripts/build.mjs"
   },
   "dependencies": {
-    "@corbet-labs/cnice": "^0.1.0",
-    "@corbet-labs/cdate": "^0.3.1",
-    "@corbet-labs/cink": "^0.2.0"
+    "@corbet-foss/cnice": "^0.1.0",
+    "@corbet-foss/cdate": "^0.3.1",
+    "@corbet-foss/cink": "^0.2.0"
   },
   "devDependencies": {
     "@types/node": "25.8.0",
@@ -61,9 +61,9 @@
   "engines": {
     "node": ">=20"
   },
-  "homepage": "https://github.com/corbet-labs/cletter#readme",
+  "homepage": "https://github.com/corbet-foss/cletter#readme",
   "bugs": {
-    "url": "https://github.com/corbet-labs/cletter/issues"
+    "url": "https://github.com/corbet-foss/cletter/issues"
   },
   "keywords": [
     "i18n",

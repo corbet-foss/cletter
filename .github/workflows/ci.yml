@@ -86,7 +86,7 @@ jobs:
               environment.write('SOURCE_SHA256=' + os.environ['SOURCE_SHA256'] + '\n')
               environment.write('SELECTED_CHECKS=' + ','.join(selectors) + '\n')
               environment.write('MINIMUM_RUST=' + minimum + '\n')
-          js = Path('js/@corbet-labs') / package['name']
+          js = Path('js/@corbet-foss') / package['name']
           inputs = [Path('Cargo.toml'), Path('Cargo.lock'), js / 'package.json', js / 'bun.lock', js / 'jsr.json', Path('py/pyproject.toml'), Path('typst.toml')]
           directory = Path(os.environ['ARTIFACT_ROOT'])
           directory.mkdir(parents=True, exist_ok=True)

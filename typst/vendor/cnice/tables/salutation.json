@@ -287,7 +287,118 @@
       "formal": "Madame, Monsieur",
       "comma": true
     },
+    "fr-ch": {
+      "source_norms": "French administrative correspondence norms (formule d'appel / formule de politesse); formal register, no 'Cher' in the default template (use override for cordial variants)",
+      "honorifics": {
+        "monsieur": {
+          "group": "m",
+          "display": "Monsieur"
+        },
+        "m": {
+          "group": "m",
+          "display": "Monsieur"
+        },
+        "madame": {
+          "group": "f",
+          "display": "Madame"
+        },
+        "mme": {
+          "group": "f",
+          "display": "Madame"
+        }
+      },
+      "titles": {
+        "professeur": "le Professeur",
+        "prof": "le Professeur",
+        "docteur": "le Docteur",
+        "dr": "le Docteur"
+      },
+      "sole_titles": [
+        "le Professeur"
+      ],
+      "filler": [
+        "docteur",
+        "dr",
+        "m",
+        "madame",
+        "mme",
+        "monsieur",
+        "prof",
+        "professeur"
+      ],
+      "named": {
+        "m": "{honorific} {titles} {surname}",
+        "f": "{honorific} {titles} {surname}"
+      },
+      "formal": "Madame, Monsieur",
+      "comma": true
+    },
     "it": {
+      "source_norms": "Italian business correspondence (Post CH scrivere; standard manuals). Default register is Gentile; Egregio/Spett.le variants via explicit override",
+      "honorifics": {
+        "sig": {
+          "group": "m",
+          "display": "Sig."
+        },
+        "signor": {
+          "group": "m",
+          "display": "Sig."
+        },
+        "sig.ra": {
+          "group": "f",
+          "display": "Sig.ra"
+        },
+        "signora": {
+          "group": "f",
+          "display": "Sig.ra"
+        }
+      },
+      "titles": {
+        "prof": "Prof.",
+        "professore": "Prof.",
+        "prof.ssa": "Prof.ssa",
+        "professoressa": "Prof.ssa",
+        "dott": "Dott.",
+        "dottore": "Dott.",
+        "dott.ssa": "Dott.ssa",
+        "dottoressa": "Dott.ssa",
+        "avv": "Avv.",
+        "avvocato": "Avv.",
+        "ing": "Ing.",
+        "ingegnere": "Ing.",
+        "dr": "Dr."
+      },
+      "sole_titles": [
+        "Prof.",
+        "Prof.ssa"
+      ],
+      "filler": [
+        "avv",
+        "avvocato",
+        "dott",
+        "dott.ssa",
+        "dottore",
+        "dottoressa",
+        "dr",
+        "ing",
+        "ingegnere",
+        "prof",
+        "prof.ssa",
+        "professore",
+        "professoressa",
+        "sig",
+        "sig.ra",
+        "signor",
+        "signora"
+      ],
+      "named": {
+        "m": "Gentile {honorific} {titles} {surname}",
+        "f": "Gentile {honorific} {titles} {surname}"
+      },
+      "formal": "Gentili Signore, Egregi Signori",
+      "comma": true
+    },
+    "it-ch": {
       "source_norms": "Italian business correspondence (Post CH scrivere; standard manuals). Default register is Gentile; Egregio/Spett.le variants via explicit override",
       "honorifics": {
         "sig": {

@@ -10,7 +10,7 @@ import sys
 import tarfile
 import tempfile
 
-REPOSITORY = "corbet-labs/cletter"
+REPOSITORY = "corbet-foss/cletter"
 LIMIT = 128 * 1024 * 1024
 
 
