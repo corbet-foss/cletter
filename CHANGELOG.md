@@ -3,7 +3,7 @@
 All notable changes to `cletter` are documented here. The project follows
 Semantic Versioning.
 
-## 0.4.1 - 2026-09-24
+## 0.4.1 - 2026-09-25
 
 - Repository moved to github.com/corbet-foss/cletter; registry metadata points there.
 - Released from a single tag through CI (crates.io and JSR trusted publishing).
