@@ -25,7 +25,7 @@ for manifest, key in (("py/pyproject.toml", "project"), ("typst.toml", "package"
     assert metadata["version"] == version
     assert metadata["license"] == license_id
 expected = {path.name: path.read_bytes() for path in (root / "LICENSES").iterdir() if path.is_file()}
-for filename in ("LGPL-3.0-only.txt", "LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt", "LGPL-3.0-linking-exception.txt", "GPL-3.0-only.txt"):
+for filename in ("LGPL-3.0-only.txt", "LGPL-3.0-linking-exception.txt", "GPL-3.0-only.txt"):
     assert expected[filename], f"Missing complete {filename}"
 assert (root / "LICENSE").read_bytes().endswith(expected["LGPL-3.0-only.txt"])
 assert b"Copyright 2026 Julian Y. Richard Corbet" in (root / "LICENSE").read_bytes()

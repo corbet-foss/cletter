@@ -3,6 +3,13 @@
 All notable changes to `cletter` are documented here. The project follows
 Semantic Versioning.
 
+## 0.4.1 - 2026-09-24
+
+- Repository moved to github.com/corbet-foss/cletter; registry metadata points there.
+- Released from a single tag through CI (crates.io and JSR trusted publishing).
+- Drop the duplicate `LICENSES/LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt`
+  (identical to `LGPL-3.0-linking-exception.txt`); JSR rejects paths with spaces.
+
 ## 0.4.0 - 2026-09-18
 
 - Compose `cnice` (new `greet` + `farewell` facade, superseding `cgreet` and
