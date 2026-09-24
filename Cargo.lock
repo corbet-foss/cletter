@@ -43,6 +43,8 @@ dependencies = [
 [[package]]
 name = "cnice"
 version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f38f47ecfe8ead2704ad3adedc14c8a963b39d81dd6d75353871112fccc1eec7"
 dependencies = [
  "serde",
  "serde_json",
