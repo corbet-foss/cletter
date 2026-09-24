@@ -28,7 +28,7 @@ for (const file of readdirSync('../../../LICENSES')) {
 }
 // The standalone browser module embeds the sibling implementations.
 for (const name of ['cgreet', 'cfarewell', 'cink', 'cdate']) {
-    cpSync(`node_modules/@corbet-foss/${name}/LICENSES`, `LICENSES/vendor/${name}`, { recursive: true });
+    cpSync(`node_modules/@corbet-labs/${name}/LICENSES`, `LICENSES/vendor/${name}`, { recursive: true });
 }
 // Keep the registry page and the GitHub product page in sync.
 copyFileSync('../../../README.md', 'README.md');

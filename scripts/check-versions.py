@@ -10,7 +10,7 @@ name = crate["name"]
 version = crate["version"]
 license_id = crate["license"]
 assert license_id == "LGPL-3.0-only WITH LGPL-3.0-linking-exception"
-package = root / "js/@corbet-foss" / name
+package = root / "js/@corbet-labs" / name
 for manifest in ("package.json", "jsr.json"):
     metadata = json.loads((package / manifest).read_text())
     assert metadata["version"] == version

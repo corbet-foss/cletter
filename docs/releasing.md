@@ -5,7 +5,7 @@ typst.toml versions consistent. Published contents are immutable: use a new
 version for corrections.
 
 1. Update versions and CHANGELOG.md, then regenerate canonical tables with
-   `bash js/@corbet-foss/cletter/scripts/sync-assets.sh`. After updating the
+   `bash js/@corbet-labs/cletter/scripts/sync-assets.sh`. After updating the
    sibling versions, run `python scripts/sync-typst-family.py /path/to/family`
    against their final checkouts and review both versions and hashes in
    `typst/vendor/manifest.json`.

@@ -2,12 +2,12 @@
 
 **Locale-correct correspondence, from salutation to closing.**
 
-[![crates.io](https://img.shields.io/crates/v/cletter.svg)](https://crates.io/crates/cletter) [![npm](https://img.shields.io/npm/v/@corbet-foss/cletter.svg)](https://www.npmjs.com/package/@corbet-foss/cletter) [![PyPI](https://img.shields.io/pypi/v/cletter.svg)](https://pypi.org/project/cletter/) [![Rust API](https://docs.rs/cletter/badge.svg)](https://docs.rs/cletter)
+[![crates.io](https://img.shields.io/crates/v/cletter.svg)](https://crates.io/crates/cletter) [![npm](https://img.shields.io/npm/v/@corbet-labs/cletter.svg)](https://www.npmjs.com/package/@corbet-labs/cletter) [![PyPI](https://img.shields.io/pypi/v/cletter.svg)](https://pypi.org/project/cletter/) [![Rust API](https://docs.rs/cletter/badge.svg)](https://docs.rs/cletter)
 
 Compose a formal letter from deterministic rules: resolve a document locale, address a recipient, write an application subject, format the date, choose a closing, and prepare a handwritten signature image. Rust, JavaScript, and Python share the same conformance vectors.
 
 ```js
-import { salutation } from '@corbet-foss/cletter';
+import { salutation } from '@corbet-labs/cletter';
 
 salutation('de-ch', 'Frau Dr. Müller');
 // Sehr geehrte Frau Dr. Müller
@@ -20,11 +20,11 @@ salutation('de-ch', 'Frau Dr. Müller');
 | Rust / Cargo | `cargo add cletter` |
 | Python / pip | `python -m pip install cletter==0.4.0` |
 | Python / uv | `uv add cletter==0.4.0` |
-| Node.js / npm | `npm install @corbet-foss/cletter` |
-| pnpm | `pnpm add @corbet-foss/cletter` |
-| Yarn | `yarn add @corbet-foss/cletter` |
-| Bun | `bun add @corbet-foss/cletter` |
-| Deno | `deno add npm:@corbet-foss/cletter` |
+| Node.js / npm | `npm install @corbet-labs/cletter` |
+| pnpm | `pnpm add @corbet-labs/cletter` |
+| Yarn | `yarn add @corbet-labs/cletter` |
+| Bun | `bun add @corbet-labs/cletter` |
+| Deno | `deno add npm:@corbet-labs/cletter` |
 
 The 0.4.0 JavaScript distribution includes compiled ESM, CommonJS,
 TypeScript declarations, and a standalone browser module. Node.js 20+ is
@@ -32,12 +32,12 @@ supported; no TypeScript loader is required.
 
 ```js
 // CommonJS
-const { salutation } = require('@corbet-foss/cletter');
+const { salutation } = require('@corbet-labs/cletter');
 ```
 
 ```html
 <script type="module">
-  import { salutation } from 'https://cdn.jsdelivr.net/npm/@corbet-foss/cletter@0.4.0/dist/browser.js';
+  import { salutation } from 'https://cdn.jsdelivr.net/npm/@corbet-labs/cletter@0.4.0/dist/browser.js';
   console.log(salutation('de-ch', 'Frau Dr. Müller'));
 </script>
 ```
