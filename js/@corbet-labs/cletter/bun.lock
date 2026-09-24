@@ -5,9 +5,9 @@
     "": {
       "name": "@corbet-labs/cletter",
       "dependencies": {
-        "@corbet-labs/cdate": "^0.3.2",
-        "@corbet-labs/cink": "^0.2.1",
-        "@corbet-labs/cnice": "^0.1.2",
+        "@corbet-labs/cdate": "0.3.2",
+        "@corbet-labs/cink": "0.2.1",
+        "@corbet-labs/cnice": "0.1.2",
       },
       "devDependencies": {
         "@types/node": "25.8.0",
