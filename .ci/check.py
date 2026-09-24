@@ -240,14 +240,14 @@ def resolve_dependencies():
     crate_manifest = tomllib.loads((ROOT / "Cargo.toml").read_text())
     if "patch" in crate_manifest or "replace" in crate_manifest:
         raise ValueError("Registry lock resolution must not use Cargo patches or replacements")
-    siblings = ("cgreet", "cfarewell", "cdate", "cink")
+    siblings = ("cnice", "cdate", "cink")
     selected = []
     for name in siblings:
         dependency = crate_manifest["dependencies"][name]
         if not isinstance(dependency, str):
             raise ValueError("Sibling Cargo dependencies must declare registry versions directly")
         selected.extend(("-p", name))
-    # Update only the four sibling dependency closures, preserving unrelated pins.
+    # Update only the sibling dependency closures, preserving unrelated pins.
     run("cargo", "update", *selected)
     locked = tomllib.loads((ROOT / "Cargo.lock").read_text())["package"]
     for name in siblings:

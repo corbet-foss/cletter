@@ -24,8 +24,8 @@ missing_panics_doc = "allow"
 too_many_lines = "allow"
 
 [dependencies]
-cdate = "0.3.0"
-cnice = "0.1"
-cink = "0.2.0"
+cdate = "0.3.2"
+cnice = "0.1.2"
+cink = "0.2.1"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"

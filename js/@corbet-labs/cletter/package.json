@@ -46,9 +46,9 @@
     "build": "bun ./scripts/build.mjs"
   },
   "dependencies": {
-    "@corbet-labs/cnice": "^0.1.0",
-    "@corbet-labs/cdate": "^0.3.1",
-    "@corbet-labs/cink": "^0.2.0"
+    "@corbet-labs/cnice": "^0.1.2",
+    "@corbet-labs/cdate": "^0.3.2",
+    "@corbet-labs/cink": "^0.2.1"
   },
   "devDependencies": {
     "@types/node": "25.8.0",

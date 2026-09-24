@@ -9,6 +9,8 @@ Semantic Versioning.
 - Released from a single tag through CI (crates.io and JSR trusted publishing).
 - Drop the duplicate `LICENSES/LGPL-3.0-only WITH LGPL-3.0-linking-exception.txt`
   (identical to `LGPL-3.0-linking-exception.txt`); JSR rejects paths with spaces.
+- Require the sibling releases without that file: cnice 0.1.2, cdate 0.3.2 and
+  cink 0.2.1 (Cargo and npm); resolve cnice from crates.io, not a local checkout.
 
 ## 0.4.0 - 2026-09-18
 

@@ -148,7 +148,7 @@ This is integration evidence, not registry package verification. `rust-package`
 always uses normal registry resolution and requires published dependencies.
 Neither the source tree nor the released manifest acquires local path patches.
 
-After the four sibling versions declared in `Cargo.toml` and the JavaScript
+After the three sibling versions declared in `Cargo.toml` and the JavaScript
 `package.json` are published on crates.io and npm, prepare cletter's registry locks:
 
 ```sh
@@ -157,7 +157,7 @@ crow-ci run --repo . --workflow ccid \
   --var ARTIFACT_ROOT=/absolute/persistent/release-artifacts
 ```
 
-This selector runs targeted `cargo update -p cgreet -p cfarewell -p cdate -p cink`
+This selector runs targeted `cargo update -p cnice -p cdate -p cink`
 and `bun install --lockfile-only --ignore-scripts` in a copied source tree. It
 requires the exact declared sibling crate versions and registry checksums; it
 does not use local dependency patches or build packages. The exported `Cargo.lock`
